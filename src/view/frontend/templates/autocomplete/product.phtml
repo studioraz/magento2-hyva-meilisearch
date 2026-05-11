@@ -19,7 +19,7 @@ $alias = (string) $block->getData('alias');
                 (store.autocomplete.results['<?= $escaper->escapeJs($alias) ?>']
                     ? store.autocomplete.results['<?= $escaper->escapeJs($alias) ?>'].length
                     : 0
-                ) + ' results'
+                ) + ' <?= $escaper->escapeJs(__('results')) ?>'
             "
         ></span>
     </div>
