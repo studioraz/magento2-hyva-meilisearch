@@ -61,9 +61,9 @@ $alias = (string) $block->getData('alias');
                     class="text-sm font-semibold text-gray-900"
                     x-show="hit.price_0 !== undefined"
                 >
-                    <span x-text="new Intl.NumberFormat('fr-FR', {
+                    <span x-text="new Intl.NumberFormat(store.meilisearchConfig.locale, {
                         style: 'currency',
-                        currency: 'EUR'
+                        currency: store.meilisearchConfig.currencyCode
                     }).format(hit.price_0)"></span>
                 </div>
             </a>
