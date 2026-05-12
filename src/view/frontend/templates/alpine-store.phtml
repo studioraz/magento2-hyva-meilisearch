@@ -588,13 +588,7 @@
                 },
 
                 getProductUrl(urlKey) {
-                    const suffix  = this.meilisearchConfig.productUrlSuffix;
                     const baseUrl = this.meilisearchConfig.baseUrl;
-
-                    if (typeof suffix === 'string' && suffix.trim() !== '') {
-                        return baseUrl + urlKey + suffix;
-                    }
-
                     return baseUrl + urlKey;
                 }
             });
